@@ -1,0 +1,6 @@
+name: hello
+functions:
+  helloWorld:
+    path: ./dice.ts:roll
+    command:
+      name: "Roll Dice"

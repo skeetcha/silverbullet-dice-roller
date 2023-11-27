@@ -1,12 +1,14 @@
 {
   "importMap": "import_map.json",
   "tasks": {
-    "build": "silverbullet plug:compile hello.plug.yaml",
-    "watch": "silverbullet plug:compile hello.plug.yaml -w"
+    "build": "silverbullet plug:compile --import_map import_map.json dice.plug.yaml",
+    "watch": "silverbullet plug:compile --import_map import_map.json dice.plug.yaml -w"
   },
   "lint": {
     "rules": {
-      "exclude": ["no-explicit-any"]
+      "exclude": [
+        "no-explicit-any"
+      ]
     }
   },
   "fmt": {
